@@ -5,21 +5,21 @@
 class CraftCli < Formula
   desc "CLI for interacting with Craft.do documents"
   homepage "https://github.com/sapihav/craft-cli"
-  version "1.10.1"
+  version "1.10.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sapihav/craft-cli/releases/download/v1.10.1/craft-cli_Darwin_x86_64.tar.gz"
-      sha256 "338094e3a7470493004aca71494a33179497aaa8c4f59ce7002db9671ba67149"
+      url "https://github.com/sapihav/craft-cli/releases/download/v1.10.2/craft-cli_Darwin_x86_64.tar.gz"
+      sha256 "86109e87b1a8878f8ff556f830802c4aed2bec1a2c5ff27233c8da5c37878b76"
 
       define_method(:install) do
         bin.install "craft"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sapihav/craft-cli/releases/download/v1.10.1/craft-cli_Darwin_arm64.tar.gz"
-      sha256 "acbadacaf142aee04a057a24df363c99125ea02163458aa448162e1db2e7bb0a"
+      url "https://github.com/sapihav/craft-cli/releases/download/v1.10.2/craft-cli_Darwin_arm64.tar.gz"
+      sha256 "bfa7664dacd1abceed1c21eade02be484d17c63758e917c287df2e455f58edf4"
 
       define_method(:install) do
         bin.install "craft"
@@ -29,15 +29,15 @@ class CraftCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sapihav/craft-cli/releases/download/v1.10.1/craft-cli_Linux_x86_64.tar.gz"
-      sha256 "fb7bc127e3fcb1d5a892a568442a801fb68af538eb407313662b55ddc03def5d"
+      url "https://github.com/sapihav/craft-cli/releases/download/v1.10.2/craft-cli_Linux_x86_64.tar.gz"
+      sha256 "bff8bee1fb3a6f9a59e230e9a23f51b7871d78d996cfd82075108825e3b8fd2f"
       define_method(:install) do
         bin.install "craft"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sapihav/craft-cli/releases/download/v1.10.1/craft-cli_Linux_arm64.tar.gz"
-      sha256 "03f5f58304a36e8e7cfb9ed78232403851c0df6c157726df4712bf4955b7b763"
+      url "https://github.com/sapihav/craft-cli/releases/download/v1.10.2/craft-cli_Linux_arm64.tar.gz"
+      sha256 "6aa0caa7c5a7ba538942b3b575ff46cdf8493e2de78031d325be256e8a7cda84"
       define_method(:install) do
         bin.install "craft"
       end
