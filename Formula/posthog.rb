@@ -1,28 +1,28 @@
 class Posthog < Formula
   desc "Community-built CLI for PostHog (unofficial)"
   homepage "https://github.com/sapihav/posthog-cli"
-  version "0.2.0"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/sapihav/posthog-cli/releases/download/v#{version}/posthog-cli_Darwin_arm64.tar.gz"
-      sha256 "6d3ef7b1b73f3423cf977ddee1139d51e1d4639004e7b8900b935468a549104f"
+      sha256 "52140f17fb907e5d29fc4d036ddff9ee6e87be04ca2f3e66770f58f68296a4f3"
     end
     on_intel do
       url "https://github.com/sapihav/posthog-cli/releases/download/v#{version}/posthog-cli_Darwin_x86_64.tar.gz"
-      sha256 "b3cf61ebb98bd3aa2f1847d0eea64aef5773fdc1615c5c76300d934a6b06ddeb"
+      sha256 "e46162b0c67495c7c3aaee360aa4101c937378b6802fb1eff6d7865cc0024cd8"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/sapihav/posthog-cli/releases/download/v#{version}/posthog-cli_Linux_arm64.tar.gz"
-      sha256 "06573a67dfbc78a77d10b7441f5213c5c999f7b41a9fb4b91f90a0e346d563af"
+      sha256 "221988d0eb8793601ab2ff136e49d9054ee3d757aa2183b84068b533ebd29d46"
     end
     on_intel do
       url "https://github.com/sapihav/posthog-cli/releases/download/v#{version}/posthog-cli_Linux_x86_64.tar.gz"
-      sha256 "013ce7278192be5f332ccfb4adffe0a8b86c668b8bb3babcc9cc61f4e237497a"
+      sha256 "1a5cc45a6125d72a5aaf757aa7cba04f60215a4aa0fa5a63aa52b03f8e432eaf"
     end
   end
 
